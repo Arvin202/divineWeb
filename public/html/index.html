@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--jquery cdnjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>線上占卜 塔羅牌</title>
+  </head>
+  <body>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="NAVBAR">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="reservation.html">線上預約</a>
+            <a class="nav-link" href="#">免費占卜/抽卡</a>
+            <a class="nav-link" href="review.html">個案真實回饋</a>
+            <a class="nav-link" href="teacher.html">師資內容</a>
+            <a class="nav-link" href="tutorial.html">免費教學</a>
+            <a class="nav-link" href="psychology.html">戀愛心理學</a>
+            <a class="nav-link" href="#">能量商品</a>
+            <a class="nav-link" href="contact.html">聯絡我們</a>
+            <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 固定底部  -->
+    <nav class="navbar fixed-bottom" id="FIXBOTTOM">
+      <div class="container text-center">
+        <a class="fixBtn" href="#"><i class="bi bi-suit-spade"></i>抽卡</a>
+        <a class="fixBtn" href="#LANDINGPAGE"><i class="bi bi-house"></i>主頁</a>
+        <a class="fixBtn" href="reservation.html"><i class="bi bi-arrow-up-right-circle"></i>預約</a>
+      </div>
+    </nav>
+
+
+    <!-- LANDINGPAGE -->
+    <section id="LANDINGPAGE">
+      <div class="container">
+        <div class="leftPart">
+          <h1>芯苓占卜算命工作坊</h1>
+          <p>身、心、靈的全方位療癒，五星級的心靈饗宴，透過算命明白命運的走向，掌握有利的時機完美自己的人生。</p>
+          <a href="#">進入!</a>
+        </div>
+        <div class="rightPart">
+          <img src="../images/card.png" alt="">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- service -->
+    <section id="SERVICE">
+      <div class="container text-center">
+
+        <div class="subHead">
+          <h1>服務項目</h1>
+        </div>
+
+        <div class="subBody">
+          <!-- 紫微斗數 -->
+          <div class="dropdown" id="ZiWei">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              紫微斗數
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">全方位命理諮詢</a></li>
+              <li><a class="dropdown-item" href="#">桃花姻緣</a></li>
+            </ul>
+          </div>
+
+          <!-- 塔羅 -->
+          <div class="dropdown" id="tarot">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              塔羅占卜
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">文字</a></li>
+              <li><a class="dropdown-item" href="#">文字</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </body>
+</html>
