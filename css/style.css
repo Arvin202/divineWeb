@@ -203,7 +203,7 @@ p,a,input,label,textarea,span,ul,li{
 #RESERVE #payMethod{
   background-color:	#FFB5B5;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 @media (max-width: 770px){
   #RESERVE .row{
@@ -222,6 +222,27 @@ p,a,input,label,textarea,span,ul,li{
 
   }
 }
+
+/* CONTACT */
+#CONTACTINFO{
+  background-color: #faf4fc;
+  padding: 20px 0 50px 0;
+}
+#CONTACTINFO .title{
+  font-size: 30px;
+  color: #b53706;
+  font-weight: bold;
+  border-bottom: 1.5px dashed #b53706;
+  padding-bottom: 10px;
+}
+#CONTACTINFO .infoSect{
+  display: flex;
+  flex-direction: column;
+}
+#CONTACTINFO .contactbox{
+  margin:30px 0 50px 0;
+}
+
 /* service */
 #SERVICE{
   height: 500px;
