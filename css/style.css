@@ -127,7 +127,101 @@ p,a,input,label,textarea,span,ul,li{
   }
 }
 
+/* reservation */
+#RESERVE{
+  background-color: #faf4fc;
+  padding: 20px 0 50px 0;
+}
+#RESERVE h1{
+  font-size: 30px;
+  color: #b53706;
+  font-weight: bold;
+  border-bottom: 1.5px dashed #b53706;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+#RESERVE .row{
+  margin: 20px 0 20px 0;
+}
+#RESERVE .step{
+  background-color: #FF8282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  height: 35px;
+  width: 85px;
+  font-weight: bold;
+  color: white;
+}
 
+#RESERVE .part{
+  margin: 0 25px;
+}
+#RESERVE #imgPart a{
+  margin-right: 10px;
+}
+#RESERVE #imgPart i{
+  font-size: 25px;
+}
+#RESERVE #imgPart .lni-line{
+  background: #00A600;
+  color: #faf4fc;
+  padding: 7px;
+  border: 1px solid #00A600;
+  box-shadow: 0 5px 4px #009100;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+#RESERVE #imgPart .lni-line:hover{
+  transform: translate(0, -8px);
+}
+#RESERVE #imgPart .lni-facebook-oval{
+  background:	#0080FF;
+  color: #faf4fc;
+  padding: 7px;
+  border: 1px solid	#0080FF;
+  box-shadow: 0 5px 4px	#0066CC;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+#RESERVE #imgPart .lni-facebook-oval:hover{
+  transform: translate(0, -8px);
+}
+#RESERVE #imgPart .lni-instagram-original{
+  color: #faf4fc;
+  background:	#D9006C;
+  padding: 7px;
+  border-radius: 50%;
+  transition: 0.7s;
+  box-shadow: 0 5px 4px #9F0050;
+}
+#RESERVE #imgPart .lni-instagram-original:hover{
+  transform: translate(0, -8px);
+}
+#RESERVE #payMethod{
+  background-color:	#FFB5B5;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+@media (max-width: 770px){
+  #RESERVE .row{
+    display: flex;
+    flex-direction: column;
+  }
+  #RESERVE .explain, #RESERVE .lastsec{
+    width:250px;
+  }
+  #RESERVE .part{
+    margin-bottom: 15px;
+  }
+  #RESERVE #imgPart{
+    display: flex;
+    justify-content:center;
+
+  }
+}
 /* service */
 #SERVICE{
   height: 500px;

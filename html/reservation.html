@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- lineicons -->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <!--jquery cdnjs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!--bootstrap css-->
@@ -28,7 +30,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" id="NAVBAR">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        <a class="navbar-brand" href="#"><img src="../images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,29 +51,58 @@
     </nav>
     <!-- reserve -->
     <section id="RESERVE">
-      <div class="container text-center">
-        <h1>預約方式</h1>
-
-
-        <div class="">
+      <div class="container">
+        <div class="col-6 offset-3 title">
+          <h1>預約方式</h1>
+        </div>
+        <div class="box">
           <p>
-            1. 私訊
-            <a href="#"><img src="https://img.icons8.com/color/45/000000/line-me.png"/></a>
-            <a href="#"><img src="https://img.icons8.com/office/40/000000/facebook-messenger--v1.png"/></a>
-            <a href="#"><img src="https://img.icons8.com/office/40/000000/instagram-new.png"/></a>
+
+            <div class="row align-items-center justify-content-center">
+              <div class="col-1 step part">
+                步驟一
+              </div>
+              <div class="col-3 part explain">
+                私訊粉專，小編會為您服務 (點擊旁邊圖示即可進入粉專)
+              </div>
+              <section class="col-3 part col-xl-5 col-md-4 lastsec" id="imgPart">
+                <a href="#"><i class="lni lni-line"></i></a>
+                <a href="#"><i class="lni lni-facebook-oval"></i></a>
+                <a href="#"><i class="lni lni-instagram-original"></i></a>
+              </section>
+            </div>
+
+            <div class="row  align-items-center justify-content-center">
+              <div class="col-1 step part">
+                步驟二
+              </div>
+              <div class="col-3 part explain">
+                小編會給您支付方式，匯款完截圖收據或後五碼即可
+              </div>
+              <section class="col-3 col-xl-5 col-md-4 part lastsec" id="payMethod">
+                付款方式: ATM轉帳、超商代碼、無卡存款、PayPal
+              </section>
+            </div>
+
+            <div class="row  align-items-center justify-content-center">
+              <div class="col-1 step part">
+                步驟三
+              </div>
+              <div class="col-3 part explain">
+                小編會幫您安排占卜時間 (可以跟小編討論您方便的時段)
+              </div>
+              <div class="col-3 col-xl-5 col-md-4 part lastsec">
+              </div>
+            </div>
+
           </p>
 
-          <p>
-            2.匯款 (匯款方式)
-          </p>
-
-          <p>
-            3.安排時間
-          </p>
         </div>
 
-        <div class="">
-          <h1>價目表</h1>
+        <div class="box">
+          <div class="col-6 offset-3 title">
+            <h1>價目表</h1>
+          </div>
 
           <div class="">
             <h6>紫微斗數</h6>
