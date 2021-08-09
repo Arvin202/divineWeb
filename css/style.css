@@ -5,7 +5,7 @@
 h1, h2, h3, h4, h5, h6{
   font-family:'NSimSun', sans-serif;
 }
-p,a,input,label,textarea,span,ul,li{
+p,a,input,label,textarea,span,ul,li,button{
   font-family:  'NSimSun' , sans-serif;
 }
 
@@ -222,7 +222,10 @@ p,a,input,label,textarea,span,ul,li{
 
   }
 }
-
+#RESERVE #priceBox .quotePrice{
+  display: flex;
+  justify-content: space-between;
+}
 /* CONTACT */
 #CONTACTINFO{
   background-color: #faf4fc;
@@ -263,7 +266,6 @@ p,a,input,label,textarea,span,ul,li{
   }
 }
 
-
 /* 抽卡 */
 #TALOCARDS{
   width: 100%;
@@ -301,7 +303,6 @@ p,a,input,label,textarea,span,ul,li{
   width: 100%;
   transform: rotateY(180deg);
 }
-
 
 /* service */
 #SERVICE{

@@ -11,7 +11,7 @@ if (cards) {
 //stack cards
 const shufBtn = document.getElementById("shufBtn");
 shufBtn.addEventListener('click', () => {
-    stack_cards(2);
+    stack_cards();
 });
 function stack_cards(margin){
   cards.forEach((eachCard, idx) => {
@@ -39,10 +39,7 @@ let randCards=[];
 
 
 separate.addEventListener('click', ()=>{
-  console.log(randCards);
   separate_one_by_one();
-
-
 })
 function separate_one_by_one(){
   var left = 0;
@@ -73,7 +70,7 @@ function separate_one_by_one(){
     time += sec_step;
   }
 }
-
+//洗牌函式
 function fisherYatesShuffle(arr){
     for(var i =arr.length-1 ; i>0 ;i--){
         var j = Math.floor( Math.random() * (i + 1) ); //random index
@@ -85,9 +82,7 @@ function shuffle(){
   for (var i = 0; i < cards.length; i++) {
     randCards.push(cards[i]);
   }
-
   fisherYatesShuffle(randCards);
-  console.log(randCards);
 }
 
 //卡片解析
