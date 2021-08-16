@@ -10,7 +10,7 @@ if (cards) {
 }
 
 //stack cards
-const shufBtn = document.getElementById("shufBtn");
+const shufBtn = document.getElementById('shufBtn');
 shufBtn.addEventListener('click', () => {
     stack_cards();
 });
@@ -20,13 +20,13 @@ function stack_cards(margin){
       var left = 0;
     	var step = margin;
     	var i = 0;
-      eachCard.style.zIndex=i;
-      eachCard.style.marginLeft=`${left}px`;
-      eachCard.style.marginTop=`0px`;
+      eachCard.style.zIndex = i;
+      eachCard.style.marginLeft = `${left}px`;
+      eachCard.style.marginTop = `0px`;
       left = left + step;
       i++;
     }
-    ,idx*150);
+    , idx * 150);
   });
   //清空陣列
   randCards.splice(0, randCards.length);
@@ -36,7 +36,7 @@ const separate = document.getElementById("separate");
 let card_container_width = $('#cardContainer').width();
 let card_spacing = 40;
 const cardsLength = 7;
-let randCards=[];
+let randCards = [];
 
 
 separate.addEventListener('click', ()=>{
@@ -57,13 +57,13 @@ function separate_one_by_one(){
 	//loop through all cards
   shuffle(randCards);
   for (let i = 0; i < cardsLength; i++) {
-    setTimeout(()=>{
-      let randCard =randCards[i];
-      randCard.style.marginTop=`${top}px`;
-      randCard.style.marginLeft=`${left}px`;
+    setTimeout(() => {
+      let randCard = randCards[i];
+      randCard.style.marginTop = `${top}px`;
+      randCard.style.marginLeft = `${left}px`;
 
       left = left + left_step;
-      if(left+card_width + card_spacing > card_container_width){
+      if (left + card_width + card_spacing > card_container_width){
 				left = 0;
 				top += card_height + card_spacing;
 			};
@@ -73,7 +73,7 @@ function separate_one_by_one(){
 }
 //洗牌函式
 function fisherYatesShuffle(arr){
-    for(var i =arr.length-1 ; i>0 ;i--){
+    for(var i = arr.length-1 ; i>0 ;i--){
         var j = Math.floor( Math.random() * (i + 1) ); //random index
         [arr[i],arr[j]]=[arr[j],arr[i]]; // swap
     }

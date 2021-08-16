@@ -5,7 +5,7 @@
 h1, h2, h3, h4, h5, h6{
   font-family:'NSimSun', sans-serif;
 }
-p,a,input,label,textarea,span,ul,li,button{
+p,a,input,label,textarea,span,ul,li,button,pre{
   font-family:  'NSimSun' , sans-serif;
 }
 
@@ -221,6 +221,19 @@ p,a,input,label,textarea,span,ul,li,button{
     justify-content:center;
   }
 }
+#RESERVE .quotePriceBox ul{
+  padding-left: 0;   /* ul tag has a built in padding-left of 2rem  */
+}
+#RESERVE .quotePriceBox{
+  border:2px #b53706 double;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 20px 0;
+}
+#RESERVE .quotePriceBox h4{
+  font-weight: bold;
+  color:#b53706;
+}
 #RESERVE #priceBox .quotePrice{
   display: flex;
   justify-content: space-between;
@@ -311,6 +324,9 @@ p,a,input,label,textarea,span,ul,li,button{
 }
 
 /* TEACHER_INFO */
+#TEACHER{
+  background-color: #faf4fc;
+}
 #TEACHER_INFO{
   padding: 30px 0 50px 0;
 }
