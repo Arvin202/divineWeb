@@ -417,16 +417,27 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   filter: drop-shadow(3px 3px 1px #d1cac7);
 }
 #TUTORIAL .enterBtn:hover{
-  animation: shake 0.1s infinite;
+  animation: shake 1.5s infinite;
 }
 @keyframes shake{
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(-2deg);
-  }
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-10px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-1px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
+#TUTORIAL .article{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px #b53706 double;
+}
+#TUTORIAL .article h5{
+  position: relative;
+  top: 4px;/* adjust the problem of the upward h5....alternatives??? */
+}
+#TUTORIAL .enterBtn2{
+  text-decoration: none;
 }
