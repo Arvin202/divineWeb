@@ -1,0 +1,44 @@
+.everyBlogPost{
+  background-color: #faf4fc;
+  padding: 30px 0 100px 0;
+}
+.blogTitle{
+  font-size: 30px;
+  color: #b53706;
+  font-weight: bold;
+  border-bottom: 1.5px dashed #b53706;
+  padding-bottom: 10px;
+  margin-bottom:30px;
+}
+.bold{
+  color: #b53706;
+  font-weight: bolder;
+}
+.imageContainer{
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+.imageContainer img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.answerBlock{
+  display: none;
+}
+.answerBtn{
+  width: 100px;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 3px #b53706 double;
+  color: #b53706;
+  background: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.5s;
+  filter: drop-shadow(3px 3px 1px #d1cac7);
+}
+.answerBtn:hover{
+  transform: scale(1.1);
+}
