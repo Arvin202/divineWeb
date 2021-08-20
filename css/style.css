@@ -376,15 +376,18 @@ p,a,input,label,textarea,span,ul,li,button,pre{
 }
 
 
-/* TUTORIAL */
-#TUTORIAL{
+/* TUTORIAL and Review*/
+#TUTORIAL, #REVIEW{
   padding: 30px 0 50px 0;
   background-color: #faf4fc;
 }
 #TUTORIAL #talotutor{
   margin-bottom: 35px;
 }
-#TUTORIAL h1{
+#REVIEW .reviewPart{
+  margin-bottom: 30px;
+}
+#TUTORIAL h1, #REVIEW h1{
   font-size: 30px;
   color: #b53706;
   font-weight: bold;
