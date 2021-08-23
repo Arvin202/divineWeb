@@ -437,10 +437,24 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   align-items: center;
   border: 3px #b53706 double;
 }
-#TUTORIAL .article h5{
+3#TUTORIAL .article h5{
   position: relative;
   top: 4px;/* adjust the problem of the upward h5....alternatives??? */
 }
 #TUTORIAL .enterBtn2{
   text-decoration: none;
+}
+#TUTORIAL #scrolldownBtn{
+  text-decoration: none;
+  background: #930000;
+  color: #faf4fc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  position: absolute;
+  font-weight: bold;
+}
+#TUTORIAL #scrolldownBtn i{
+  font-size: 20px;
 }

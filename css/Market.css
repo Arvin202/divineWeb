@@ -1,0 +1,41 @@
+#MARKET{
+  padding: 30px 0 50px 0;
+  background-color: #faf4fc;
+}
+#MARKET h1{
+  font-size: 30px;
+  color: #b53706;
+  font-weight: bold;
+  border-bottom: 1.5px dashed #b53706;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#MARKET .col{
+  margin-bottom: 10px;
+}
+#MARKET li{
+  margin-bottom: 30px;
+}
+.crystal{
+  width: 18rem;
+  height: 100%;
+  max-width: 320px;
+  box-shadow: 3px 4px 5px #4D3F3F;
+-webkit-box-shadow: 3px 4px 5px #4D3F3F;
+-moz-box-shadow: 3px 4px 5px #4D3F3F;
+}
+.card-body h6{
+  font-weight: bold;
+  color: #b53706;
+}
+.alertbtn{
+  cursor: pointer;
+  color: 	#2894FF;
+  transition: .5s;
+}
+.alertbtn:hover{
+  color: 	#0066CC;
+}
