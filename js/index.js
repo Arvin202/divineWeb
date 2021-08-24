@@ -1,5 +1,39 @@
+// find data in json file
+async function getCardsInfo() {
+  const response = await fetch('../json/cardsInfo.json');
+  const json = await response.json();
+  const qOne = await json.cardInfoForQ1;
+  for (var i = 0; i < qOne.length; i++) {
+    var tarotCard = document.createElement('div');
+    tarotCard.setAttribute('class', 'cards');
+    var cardFront = document.createElement('div');
+    cardFront.setAttribute('class', 'cardsfront cardsFace');
+    var cardFrontImg = document.createElement('img');
+    cardFrontImg.src = '../images/talo_space.jpg';
+
+    var cardBack = document.createElement('div');
+    cardBack.setAttribute('class', 'cardsback cardsFace');
+    var cardBackImg = document.createElement('img');
+    var cardUrl = qOne[i].cardImg;
+    cardBackImg.src = cardUrl;
+
+    const cardContainer = document.getElementById('cardContainer');
+    cardContainer.appendChild(tarotCard);
+    tarotCard.appendChild(cardFront);
+    tarotCard.appendChild(cardBack);
+    cardFront.appendChild(cardFrontImg);
+    cardBack.appendChild(cardBackImg);
+  }
+}
+getCardsInfo()
+  .then(console.log('cardsuploaded'))
+  .then(cardsrelated());
+
+function cardsrelated() {
+
 // Cards flip
-const cards  = document.querySelectorAll('.cards');
+const cards = document.querySelectorAll('.cards');
+console.log(cards);
 if (cards) {
   for (let i = 0; i < cards.length; i += 1) {
     const card = cards[i];
@@ -54,11 +88,13 @@ function separate_one_by_one(){
 	//time lag between each card placement
 	var sec_step = 150;
 	var time = 0;
+
 	//loop through all cards
   shuffle(randCards);
   for (let i = 0; i < cardsLength; i++) {
     setTimeout(() => {
       let randCard = randCards[i];
+      console.log(randCard);
       randCard.style.marginTop = `${top}px`;
       randCard.style.marginLeft = `${left}px`;
 
@@ -86,7 +122,9 @@ function shuffle(){
   fisherYatesShuffle(randCards);
 }
 
+}
 //卡片解析
+/*
 const swordsCard = document.getElementById("swordsCard");
 swordsCard.addEventListener('click',()=>{
   document.getElementById('whatYouPick').innerHTML='寶劍五正位';
@@ -122,3 +160,4 @@ cupCard.addEventListener('click',()=>{
   document.getElementById('whatYouPick').innerHTML='聖杯一正位';
   document.getElementById('explain').innerHTML='對方對你有好感，印象也不錯。雖然還談不上喜歡，不過他對你的感覺是正面的，可以多多互動來加深感情呦～';
 });
+*/
