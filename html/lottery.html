@@ -53,15 +53,18 @@
         <div class="col-6 offset-3 text-center title">
           <h1>塔羅抽卡</h1>
         </div>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             選擇題目
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">心目中的他對我的感覺是甚麼?</a></li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" id="q1" href="#">心目中的他對我的感覺是甚麼?</a></li>
+            <li><a class="dropdown-item" id="q2" href="#">三個月內的桃花運如何呢?</a></li>
           </ul>
         </div>
-        <div class="questions">
+        <div id="questionContainer">
+          <span>你的問題:</span>
+          <span id="yourQuestion"></span>
         </div>
         <button type="button" name="button" class="col-lg-auto" id="shufBtn" style="width:100px; height:50px;">再抽一次</button>
         <button type="button" name="button" class="col-lg-auto" id="separate" style="width:100px; height:50px; margin:20px;">開始抽牌</button>
