@@ -16,10 +16,11 @@
   transition: .7s ease;
   transform-style: preserve-3d;
   cursor: pointer;
+  perspective: 500px;
   /* REVIEW: 翻轉原點不偏移 */
   transform-origin: 62px;
   -ms-transform-origin: 62px;
-  -webikit-transform-origin:62px;
+  -webkit-transform-origin:62px;
   -moz-transform-origin: 62px ;
 }
 #TALOCARDS .cards.isflipped{
