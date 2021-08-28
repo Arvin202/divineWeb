@@ -192,7 +192,7 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   color: #faf4fc;
   padding: 7px;
   border: 1px solid #00A600;
-  box-shadow: 0 5px 4px #009100;
+/*   box-shadow: 0 5px 4px #009100; */
   border-radius: 50%;
   transition: 0.7s;
 }
@@ -204,7 +204,7 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   color: #faf4fc;
   padding: 7px;
   border: 1px solid	#0080FF;
-  box-shadow: 0 5px 4px	#0066CC;
+/*   box-shadow: 0 5px 4px	#0066CC; */
   border-radius: 50%;
   transition: 0.7s;
 }
@@ -213,11 +213,11 @@ p,a,input,label,textarea,span,ul,li,button,pre{
 }
 #RESERVE #imgPart .lni-instagram-original{
   color: #faf4fc;
-  background:	#D9006C;
+  background:	#d52e55;
   padding: 7px;
   border-radius: 50%;
   transition: 0.7s;
-  box-shadow: 0 5px 4px #9F0050;
+/*   box-shadow: 0 5px 4px #9F0050; */
 }
 #RESERVE #imgPart .lni-instagram-original:hover{
   transform: translate(0, -8px);
@@ -422,7 +422,7 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   align-items: center;
   border: 3px #b53706 double;
 }
-3#TUTORIAL .article h5{
+#TUTORIAL .article h5{
   position: relative;
   top: 4px;/* adjust the problem of the upward h5....alternatives??? */
 }
