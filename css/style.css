@@ -223,8 +223,9 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   transform: translate(0, -8px);
 }
 #RESERVE #payMethod{
-  background-color:	#FFB5B5;
+  background-color:	#fff;
   padding: 10px 15px;
+  border: 2px solid	#8a8a8a;
   border-radius: 8px;
 }
 @media (max-width: 770px){
