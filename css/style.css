@@ -84,7 +84,8 @@ p,a,input,label,textarea,span,ul,li,button,pre{
 }
 #LANDINGPAGE .leftPart a{
   text-decoration: none;
-  background: #fe644d;
+  background: #ff6f56;
+  box-shadow: 0 4px 4px	#7e7d7d;
   color: white;
   padding: 10px 35px;
   border-radius: 5px;
@@ -444,4 +445,12 @@ p,a,input,label,textarea,span,ul,li,button,pre{
 }
 #TUTORIAL #scrolldownBtn i{
   font-size: 20px;
+}
+
+.footer{
+  text-align: center;
+  background-color: #faf4fc;
+  color: rgb(160, 99, 99);
+  padding: 20px 0;
+  text-align: center;
 }
