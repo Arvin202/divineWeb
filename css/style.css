@@ -249,6 +249,7 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   padding-left: 0;   /* ul tag has a built in padding-left of 2rem  */
 }
 #RESERVE .quotePriceBox{
+  color: #535353;
   border:2px #b53706 double;
   background-color: #ffece7;
   border-radius: 15px;
