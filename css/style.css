@@ -455,3 +455,11 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   padding: 20px 0;
   text-align: center;
 }
+
+.lotfooter{
+  text-align: center;
+  background-color: #faf4fc;
+  color: rgb(160, 99, 99);
+  padding: 700px 0 20px;
+  text-align: center;
+}
