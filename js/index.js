@@ -170,8 +170,6 @@ function createCards() {
     }));
   }
 
-
-
 }
 getCardsInfo()
   .then(cardsrelated());
