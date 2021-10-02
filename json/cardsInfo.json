@@ -2,17 +2,17 @@
     "cardInfoForQ1" : [
       {
         "cardName": "聖杯一正位",
-        "cardImg": "../images/talo_cups.jpg",
+        "cardImg": "../images/talo_1cups.jpg",
         "cardExplained": "對方對你很有好感，希望能夠多了解你一點。因此想要感情更進一步的話，你們需要加深生活上的連結，平常有機會多和他分享日常、尋找共同話題，尤其透過語音的方式進行溝通，都能使他更確認自己心意。"
       },
       {
         "cardName": "聖杯二逆位",
-        "cardImg": "../images/talo_2cups.jpg",
+        "cardImg": "../images/talo_2cups_rv.jpg",
         "cardExplained": "他對你的感情經常變動，時而喜歡，有時卻又興致缺缺，難以捉摸，或許是他的個性或身邊其他對象所導致。你們會感受到兩人的付出是不平等的，總是有一方付出的特別多。但付出再多也很難走進對方的內心，而無法信任對方，導致關係的失衡。"
       },
       {
         "cardName": "聖杯三逆位",
-        "cardImg": "../images/talo_3cups.jpg",
+        "cardImg": "../images/talo_3cups_rv.jpg",
         "cardExplained": "他目前對於你的感覺比較單薄，如果最近對方變得冷淡，可能是對方還有其他曖昧對象，或者心中有放不下的前任或事情，他目前沒有意願和你往後發展，只想要先保持著曖昧。你可以退後一步，好好了解他的現況，別讓自己因為愛情而盲目。"
       },
       {
@@ -22,7 +22,7 @@
       },
       {
         "cardName": "錢幣二正位",
-        "cardImg": "../images/talo_pentacle.jpg",
+        "cardImg": "../images/talo_2pentacle.jpg",
         "cardExplained": "對方心裡是有你的位置的，但他有時會對你顯得漫不經心，聊天時忽冷忽熱，因為他還有其他在意的事情，也許是工作或是其他對象，現在的他還正在猶豫要選擇哪一方。選到這張牌的你，不妨使用一些小心機，讓他察覺你的重要性，為了你而放下其他心事吧～"
       },
       {
@@ -32,7 +32,7 @@
       },
       {
         "cardName": "寶劍五正位",
-        "cardImg": "../images/talo_swords.jpg",
+        "cardImg": "../images/talo_5swords.jpg",
         "cardExplained": "他覺得你喜歡逞口舌之快、貪圖眼前的小成功，並沒有太注意到你對他的好感。你們兩人間存在著溝通不良，導致你們間經常發生爭執或誤會，最後漸行漸遠。建議放下自尊心好好溝通，才不會兩敗俱傷，先維持友誼基底，才有機會往上發展成情人喔。"
       }
       ]
