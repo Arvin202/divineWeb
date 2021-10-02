@@ -2,25 +2,37 @@
 const cardContainer = document.getElementById('cardContainer');
 const qOneBtn = document.getElementById('q1');
 const qTwoBtn = document.getElementById('q2');
+const qThreeBtn = document.getElementById('q3');
 const yourQuestion = document.getElementById('yourQuestion');
+
+//question added
 let qOne;
 let qTwo;
+let qThree;
 
 async function getCardsInfo() {
   const response = await fetch('../json/cardsInfo.json');
   const json = await response.json();
+
+  ///object added
   const qOneObject = json[0];
   const qTwoObject = json[1];
+  const qThreeObject = json[2];
+
   qOne = qOneObject.cardInfoForQ1;
   qTwo = qTwoObject.cardInfoForQ2;
+  qThree = qThreeObject.cardInfoForQ3;
+  console.log(qThree);
 }
 
 function createCards() {
+  //
   qOneBtn.addEventListener('click', () => {
     yourQuestion.innerHTML = qOneBtn.innerHTML;
     if (cardContainer != '') {////clear container
       cardContainer.innerHTML = '';
     }
+
     create(qOne);
     afterwards(qOne);
   });
@@ -29,8 +41,18 @@ function createCards() {
     if (cardContainer != '') {
       cardContainer.innerHTML = '';
     }
+
     create(qTwo);
     afterwards(qTwo);
+  });
+  qThreeBtn.addEventListener('click', () => {
+    yourQuestion.innerHTML = qThreeBtn.innerHTML;
+    if (cardContainer != '') {
+      cardContainer.innerHTML = '';
+    }
+
+    create(qThree);
+    afterwards(qThree);
   });
   function create(currentQuestion) {
     for (var i = 0; i < currentQuestion.length; i++) {
