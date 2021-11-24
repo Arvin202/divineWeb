@@ -3,12 +3,14 @@ const cardContainer = document.getElementById('cardContainer');
 const qOneBtn = document.getElementById('q1');
 const qTwoBtn = document.getElementById('q2');
 const qThreeBtn = document.getElementById('q3');
+const qFourBtn = document.getElementById('q4');
 const yourQuestion = document.getElementById('yourQuestion');
 
 //question added
 let qOne;
 let qTwo;
 let qThree;
+let qFour;
 
 async function getCardsInfo() {
   const response = await fetch('../json/cardsInfo.json');
@@ -18,15 +20,17 @@ async function getCardsInfo() {
   const qOneObject = json[0];
   const qTwoObject = json[1];
   const qThreeObject = json[2];
+  const qFourObject = json[3];
 
   qOne = qOneObject.cardInfoForQ1;
   qTwo = qTwoObject.cardInfoForQ2;
   qThree = qThreeObject.cardInfoForQ3;
-  console.log(qThree);
+  qFour = qFourObject.cardInfoForQ4;
+  // console.log(qFour);
 }
 
 function createCards() {
-  //
+
   qOneBtn.addEventListener('click', () => {
     yourQuestion.innerHTML = qOneBtn.innerHTML;
     if (cardContainer != '') {////clear container
@@ -53,6 +57,15 @@ function createCards() {
 
     create(qThree);
     afterwards(qThree);
+  });
+  qFourBtn.addEventListener('click', () => {
+    yourQuestion.innerHTML = qFourBtn.innerHTML;
+    if (cardContainer != '') {
+      cardContainer.innerHTML = '';
+    }
+
+    create(qFour);
+    afterwards(qFour);
   });
   function create(currentQuestion) {
     for (var i = 0; i < currentQuestion.length; i++) {
