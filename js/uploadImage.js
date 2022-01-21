@@ -31,7 +31,6 @@ for (var i = 0; i <= ZiWeiPictureAmount; i++) {
 }
 
 const ZiWeireview = document.getElementById('ZiWeireview');
-
 for (var i = 1; i < reviewZiWeiImages.length; i++) {
   var img = document.createElement('img');
   img.setAttribute('class', 'ZiWeiReviewImages');
@@ -39,4 +38,25 @@ for (var i = 1; i < reviewZiWeiImages.length; i++) {
   img.style.margin = '3px';
   img.src = reviewZiWeiImages[i];
   ZiWeireview.appendChild(img);
+}
+
+// REVIEW: load candle review images
+let reviewcandleImages = [new Image()];
+let reviewcandleImage = new Image();
+let candlePictureAmount = 17;
+
+for (var i = 0; i <= candlePictureAmount; i++) {
+  reviewcandleImage.src = `../images/review/candlereview/蠟燭回饋_220121_${i}.jpg`;
+  var eachImage = reviewcandleImage.src;
+  reviewcandleImages.push(eachImage);
+}
+
+const candlereview = document.getElementById('candlereview');
+for (var i = 1; i < reviewcandleImages.length; i++) {
+  var img = document.createElement('img');
+  img.setAttribute('class', 'candleReviewImages');
+  img.setAttribute('class', 'col-10 col-lg-3');
+  img.style.margin = '3px';
+  img.src = reviewcandleImages[i];
+  candlereview.appendChild(img);
 }
