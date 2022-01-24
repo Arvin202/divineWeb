@@ -60,3 +60,24 @@ for (var i = 1; i < reviewcandleImages.length; i++) {
   img.src = reviewcandleImages[i];
   candlereview.appendChild(img);
 }
+
+// REVIEW: load word review images
+let reviewwordImages = [new Image()];
+let reviewwordImage = new Image();
+let wordPictureAmount = 18;
+
+for (var i = 0; i <= wordPictureAmount; i++) {
+  reviewwordImage.src = `../images/review/wordreview/測字回饋_220124_${i}.jpg`;
+  var eachImage = reviewwordImage.src;
+  reviewwordImages.push(eachImage);
+}
+
+const wordreview = document.getElementById('wordreview');
+for (var i = 1; i < reviewwordImages.length; i++) {
+  var img = document.createElement('img');
+  img.setAttribute('class', 'wordReviewImages');
+  img.setAttribute('class', 'col-10 col-lg-3');
+  img.style.margin = '3px';
+  img.src = reviewwordImages[i];
+  wordreview.appendChild(img);
+}

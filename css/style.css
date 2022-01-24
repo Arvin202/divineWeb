@@ -343,6 +343,9 @@ p,a,input,label,textarea,span,ul,li,button,pre{
 #TEACHER_INFO #Ella{
   color: #EEAF2A;
 }
+#TEACHER_INFO #Bunny{
+  color: #6a4c86;
+}
 #TEACHER_INFO h6{
   font-weight: bold;
   color: #96657a;
@@ -355,13 +358,16 @@ p,a,input,label,textarea,span,ul,li,button,pre{
   width: 100%;
 }
 #TEACHER_INFO #profilePic01{
-  border: 3px #f77a14 double;
+  border: 3px #b16157 double;
 }
 #TEACHER_INFO #profilePic02{
   border: 3px #0066e3 double;
 }
 #TEACHER_INFO #profilePic03{
   border: 3px #ffcf21 double;
+}
+#TEACHER_INFO #profilePic04{
+  border: 3px #7d4e92 double;
 }
 
 
