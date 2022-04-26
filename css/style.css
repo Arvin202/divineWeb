@@ -382,6 +382,28 @@ p,a,input,label,textarea,span,ul,li,button,pre{
 #REVIEW .reviewPart{
   margin-bottom: 30px;
 }
+
+#REVIEW .buttonPart{
+  background-color: #f18e8e;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  height: 35px;
+  width: 85px;
+  margin: 15px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: white;
+}
+#REVIEW a{
+  color: white;
+  text-decoration:none;
+}
+#REVIEW  a:hover{
+  text-decoration:underline;
+}
+
 #TUTORIAL h1, #REVIEW h1{
   font-size: 30px;
   color: #b53706;
