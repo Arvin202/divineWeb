@@ -4,6 +4,7 @@ const qOneBtn = document.getElementById('q1');
 const qTwoBtn = document.getElementById('q2');
 const qThreeBtn = document.getElementById('q3');
 const qFourBtn = document.getElementById('q4');
+const qFiveBtn = document.getElementById('q5');
 const yourQuestion = document.getElementById('yourQuestion');
 
 //question added
@@ -11,6 +12,7 @@ let qOne;
 let qTwo;
 let qThree;
 let qFour;
+let qFive;
 
 async function getCardsInfo() {
   const response = await fetch('../json/cardsInfo.json');
@@ -21,11 +23,13 @@ async function getCardsInfo() {
   const qTwoObject = json[1];
   const qThreeObject = json[2];
   const qFourObject = json[3];
+  const qFiveObject = json[4];
 
   qOne = qOneObject.cardInfoForQ1;
   qTwo = qTwoObject.cardInfoForQ2;
   qThree = qThreeObject.cardInfoForQ3;
   qFour = qFourObject.cardInfoForQ4;
+  qFive = qFiveObject.cardInfoForQ5;
   // console.log(qFour);
 }
 
@@ -67,6 +71,17 @@ function createCards() {
     create(qFour);
     afterwards(qFour);
   });
+
+  qFiveBtn.addEventListener('click', () => {
+    yourQuestion.innerHTML = qFiveBtn.innerHTML;
+    if (cardContainer != '') {
+      cardContainer.innerHTML = '';
+    }
+
+    create(qFive);
+    afterwards(qFive);
+  });
+
   function create(currentQuestion) {
     for (var i = 0; i < currentQuestion.length; i++) {
       var tarotCard = document.createElement('div');
