@@ -9,6 +9,7 @@ const qSixBtn = document.getElementById('q6');
 const qSevenBtn = document.getElementById('q7');
 const qEightBtn = document.getElementById('q8');
 const qNineBtn = document.getElementById('q9');
+const qTenBtn = document.getElementById('q10');
 const yourQuestion = document.getElementById('yourQuestion');
 
 //question added
@@ -21,6 +22,7 @@ let qSix;
 let qSeven;
 let qEight;
 let qNine;
+let qTen;
 
 async function getCardsInfo() {
   const response = await fetch('../json/cardsInfo.json');
@@ -36,6 +38,7 @@ async function getCardsInfo() {
   const qSevenObject = json[6];
   const qEightObject = json[7];
   const qNineObject = json[8];
+  const qTenObject = json[9];
 
   qOne = qOneObject.cardInfoForQ1;
   qTwo = qTwoObject.cardInfoForQ2;
@@ -46,6 +49,7 @@ async function getCardsInfo() {
   qSeven = qSevenObject.cardInfoForQ7;
   qEight = qEightObject.cardInfoForQ8;
   qNine = qNineObject.cardInfoForQ9;
+  qTen = qTenObject.cardInfoForQ10;
   // console.log(qFour);
 }
 
@@ -136,6 +140,16 @@ function createCards() {
 
     create(qNine);
     afterwards(qNine);
+  });
+
+  qTenBtn.addEventListener('click', () => {
+    yourQuestion.innerHTML = qTenBtn.innerHTML;
+    if (cardContainer != '') {////clear container
+      cardContainer.innerHTML = '';
+    }
+
+    create(qTen);
+    afterwards(qTen);
   });
 
   function create(currentQuestion) {
